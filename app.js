@@ -16,10 +16,9 @@ window.addEventListener('load', ()=> {
            //console.log(posicion.coords.latitude)
            lon = posicion.coords.longitude
            lat = posicion.coords.latitude
-            //ubicación actual    
-           //const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=67988b5cd4f06c57c61e24a67618c907`
+   
            const url = `https://api.openweathermap.org/data/2.5/weather?q=La Plata&lang=es&units=metric&appid=67988b5cd4f06c57c61e24a67618c907`
-         //  console.log(url)
+      
            fetch(url)
            .then(response=>{return response.json()})
            .then(data=>{
